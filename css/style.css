@@ -63,6 +63,8 @@ body {
     font-weight: 700;
 }
 
+/* FIN LAYOUT */
+
 /* HEADER */
 
 header .nav-top {
@@ -136,6 +138,8 @@ header .menu :is(.activo, a:hover) {
     color: var(--colorPrincipal);
 }
 
+/* FIN HEADER */
+
 /* FOOTER */
 
 footer {
@@ -167,6 +171,8 @@ footer a:hover {
     color: var(--colorPrincipal);
     font-size: 250%;
 }
+
+/* FIN FOOTER */
 
 /* HERO */
 
@@ -218,7 +224,9 @@ footer a:hover {
     text-decoration: none;
 }
 
-/* MAIN */
+/* FIN HERO */
+
+/* MAIN HOME*/
 
 main section {
     padding: 2.125em 0;
@@ -321,7 +329,65 @@ main #ourservices article {
     margin-bottom: 70px;
 }
 
-/* mediaqueries */
+/* FIN MAIN HOME */
+
+/* MAIN BLOG */
+
+main #ourblogs .grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main #ourblogs article {
+    padding: 1.5rem 0;
+    margin: 0 1.5rem;
+}
+
+#ourblogs article h3 {
+    font-weight: 400;
+    font-size: 150%;
+    margin: 1rem 0;
+    font-family: var(--fuenteTitulos);
+    color: var(--colorSecundario);
+}
+
+#ourblogs article p {
+    color: #666;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    color: var(--colorSecundario);
+}
+
+#ourblogs article h4 {
+    font-weight: 700;
+    font-size: 105%;
+    margin: 0.625rem 0;
+    font-family: var(--fuenteTitulos);
+    color: var(--colorPrincipal);
+}
+
+#ourblogs article figure {
+    position: relative;
+}
+
+.fecha {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 33%;
+    background-color: #fa573acf;
+    color: white;
+    font-weight: 700;
+}
+
+.fecha span {
+    margin: auto auto;
+    line-height: 1.5rem;
+}
+
+/* FIN MAIN BLOG */
+
+/* MEDIAQUERIES */
 
 @media(min-width: 37.500rem) {
     main #ourservices .grid {
@@ -331,7 +397,6 @@ main #ourservices article {
     main #ourservices .grid article:last-child {
         grid-column: 1 / 3;
     }
-
 
     main #ourservices article {
         border-bottom: 0px;
@@ -365,6 +430,10 @@ main #ourservices article {
 
     main #ourservices .grid article:last-child {
         grid-column: 3 / 4;
+    }
+
+    main #ourblogs .grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
