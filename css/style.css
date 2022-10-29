@@ -387,6 +387,20 @@ main #ourblogs article {
 
 /* FIN MAIN BLOG */
 
+/* MAIN MENU  */
+
+.fondo {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colorSecundario);
+}
+
+#todaysmenu h2 {
+    color: white;
+}
+
+/* FINAL MAIN MENU */
+
 /* MEDIAQUERIES */
 
 @media(min-width: 37.500rem) {
@@ -435,6 +449,12 @@ main #ourblogs article {
     main #ourblogs .grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .fecha {
+        height: 33.3%;
+        width: 20%;
+    }
+
 }
 
 @media(min-width: 62.750rem) {
