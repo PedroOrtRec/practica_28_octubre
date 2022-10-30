@@ -399,7 +399,7 @@ main #ourblogs article {
     background-color: var(--colorSecundario);
 }
 
-#todaysmenu h2 {
+#todaysmenu {
     color: white;
 }
 
@@ -426,7 +426,6 @@ main #ourblogs article {
 #todaysmenu .left_flex li {
     padding: 1rem;
     border-radius: 0.5rem;
-    color: white;
 }
 
 #todaysmenu .left_flex li:hover {
@@ -438,7 +437,6 @@ main #ourblogs article {
 }
 
 #todaysmenu aside h3 {
-    color: white;
     font-weight: 700;
 }
 
