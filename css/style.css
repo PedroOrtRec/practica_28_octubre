@@ -396,10 +396,12 @@ main #ourblogs article {
 
 .fondo {
     width: 100%;
+    height: 100%;
     background-color: var(--colorSecundario);
 }
 
-#todaysmenu {
+#todaysmenu,
+#todaysmenu h2 {
     color: white;
 }
 
@@ -453,6 +455,26 @@ main #ourblogs article {
 
 .flexbox .grid {
     width: 90%;
+}
+
+#todaysmenu .grid .precio {
+    color: var(--colorPrincipal);
+    font-weight: 700;
+}
+
+#todaysmenu .grid a {
+    color: var(--colorPrincipal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#todaysmenu .grid h3 {
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+#todaysmenu .grid h3 span {
+    margin-left: 1rem;
 }
 
 
@@ -515,6 +537,37 @@ main #ourblogs article {
     .fecha {
         height: 33.3%;
         width: 20%;
+    }
+
+    .flexbox {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .flexbox .left_flex {
+        width: 30%;
+        margin-top: 0;
+        margin-right: 2rem;
+    }
+
+    .flexbox .grid {
+        width: 70%;
+    }
+
+    .flexbox .grid article {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .flexbox .grid article:nth-child(2) {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .flexbox article figure {
+        width: 25%;
     }
 
 }
