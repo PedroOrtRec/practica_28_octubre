@@ -378,6 +378,11 @@ main #ourblogs article {
     background-color: #fa573acf;
     color: white;
     font-weight: 700;
+    text-align: center;
+    min-width: 4rem;
+    min-height: 4rem;
+    max-width: 4rem;
+    max-height: 4rem;
 }
 
 .fecha span {
@@ -390,14 +395,68 @@ main #ourblogs article {
 /* MAIN MENU  */
 
 .fondo {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     background-color: var(--colorSecundario);
 }
 
 #todaysmenu h2 {
     color: white;
 }
+
+#todaysmenu .underline {
+    margin-top: 1rem;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.flexbox .left_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+#todaysmenu .left_flex li {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+#todaysmenu .left_flex li:hover {
+    background-color: var(--colorPrincipal);
+}
+
+.li_activo {
+    background-color: var(--colorPrincipal);
+}
+
+#todaysmenu aside h3 {
+    color: white;
+    font-weight: 700;
+}
+
+#todaysmenu aside p {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.flexbox aside hr {
+    border-color: var(--colorPrincipal);
+    width: 3rem;
+    margin: 0.8rem 0;
+}
+
+.flexbox .grid {
+    width: 90%;
+}
+
 
 /* FINAL MAIN MENU */
 
@@ -421,6 +480,11 @@ main #ourblogs article {
 
     #aboutus .grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    #aboutus .grid>div {
+        margin-top: 1rem;
     }
 
 }
