@@ -304,6 +304,7 @@ main #ourservices article {
 #aboutus figure {
 
     margin: 1.250rem auto;
+    transform: scale(0.9);
 }
 
 #aboutus figure .frame {
@@ -327,6 +328,24 @@ main #ourservices article {
 
 #aboutus {
     margin-bottom: 70px;
+}
+
+#aboutus figure .frame {
+    transform: rotateZ(10deg);
+    transition: 0.5s;
+}
+
+#aboutus figure .frame img {
+    transform: rotateZ(-10deg);
+    transition: 0.5s;
+}
+
+#aboutus figure:hover :is(.frame, img) {
+    transform: rotateZ(0deg)
+}
+
+#aboutus h3 {
+    margin-top: 2.5rem;
 }
 
 /* FIN MAIN HOME */
@@ -507,11 +526,15 @@ main #ourblogs article {
 
     #aboutus .grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        /* gap: 1.5rem; */
     }
 
     #aboutus .grid>div {
         margin-top: 1rem;
+    }
+
+    #aboutus .figure {
+        transform: scale(0.8);
     }
 
 }
