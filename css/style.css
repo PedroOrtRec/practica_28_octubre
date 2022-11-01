@@ -344,6 +344,12 @@ main #ourservices article {
     transform: rotateZ(0deg)
 }
 
+#ourservices .grid a:hover i {
+    transform: translateX(5px) scale(1.2);
+    color: var(--colorSecundario);
+    transition: 0.5s;
+}
+
 /* FIN MAIN HOME */
 
 /* MAIN BLOG */
@@ -405,6 +411,12 @@ main #ourblogs article {
     line-height: 1.5rem;
 }
 
+#ourblogs .grid a:hover i {
+    transform: translateX(5px) scale(1.2);
+    color: var(--colorSecundario);
+    transition: 0.5s;
+}
+
 /* FIN MAIN BLOG */
 
 /* MAIN MENU  */
@@ -422,6 +434,11 @@ main #ourblogs article {
 
 #todaysmenu .underline {
     margin-top: 1rem;
+}
+
+#todaysmenu ul a {
+    text-decoration: none;
+    color: white;
 }
 
 .flexbox {
@@ -483,6 +500,12 @@ main #ourblogs article {
     font-weight: 700;
 }
 
+#todaysmenu .grid a:hover i {
+    transform: translateX(5px) scale(1.2);
+    color: white;
+    transition: 0.5s;
+}
+
 #todaysmenu .grid h3 {
     font-weight: 700;
     margin: 1rem 0;
@@ -526,7 +549,6 @@ main #ourblogs article {
 
     #aboutus .grid {
         grid-template-columns: repeat(2, 1fr);
-        /* gap: 1.5rem; */
     }
 
     #aboutus .grid>div {
