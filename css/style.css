@@ -344,10 +344,6 @@ main #ourservices article {
     transform: rotateZ(0deg)
 }
 
-#aboutus h3 {
-    margin-top: 2.5rem;
-}
-
 /* FIN MAIN HOME */
 
 /* MAIN BLOG */
@@ -415,7 +411,7 @@ main #ourblogs article {
 
 .fondo {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: var(--colorSecundario);
 }
 
@@ -500,9 +496,13 @@ main #ourblogs article {
     margin: 1rem 0;
 }
 
-/* #todaysmenu article:nth-child(2) {
-    margin: 1rem 0;
-} */
+#todaysmenu .grid article>div {
+    margin-bottom: 1.5rem;
+}
+
+#todaysmenu .underline {
+    margin-bottom: 1rem;
+}
 
 /* FINAL MAIN MENU */
 
@@ -535,6 +535,10 @@ main #ourblogs article {
 
     #aboutus .figure {
         transform: scale(0.8);
+    }
+
+    #aboutus h3 {
+        margin-top: 1rem
     }
 
 }
@@ -590,6 +594,7 @@ main #ourblogs article {
         display: flex;
         flex-direction: row;
         gap: 1rem;
+        justify-content: end;
     }
 
     .flexbox .grid article:nth-child(2) {
@@ -599,6 +604,10 @@ main #ourblogs article {
 
     .flexbox article figure {
         width: 25%;
+    }
+
+    #todaysmenu .grid article>div {
+        margin-bottom: 0;
     }
 
 }
